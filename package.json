@@ -1,0 +1,25 @@
+{
+  "name": "tuk-webpack-starter",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "yarn css && webpack-dev-server --mode development",
+    "build": "yarn build:css webpack --mode production",
+    "css": "tailwindcss build src/css/source.css -o dist/tailwind.css",
+    "build:css": "postcss src/css/source.css -o dist/tailwind.css --env production"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.5",
+    "css-loader": "^3.6.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.2.1",
+    "tailwindcss": "^1.5.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
