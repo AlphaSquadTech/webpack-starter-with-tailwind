@@ -3,5 +3,6 @@ node_modules
 .DS_Store
 yarn.lock
 package-lock.json
+package-lock.json
 dist/tailwind.css
 dist/bundle.js
